@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | BioBio Code</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Encabezado reutilizable -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">BioBio <span>Code</span></div>
+      <nav class="site-nav">
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <ul id="navList">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#mision">Misión</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#filosofia">Filosofía</a></li>
+          <li><a href="#region">Compromiso Regional</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Nosotros -->
+  <section class="hero hero-nosotros">
+    <div class="container">
+      <h2>Somos BioBio Code</h2>
+      <p>Una empresa nacida en el Biobío, creada para impulsar la región desde la tecnología.</p>
+    </div>
+  </section>
+
+  <!-- Misión y Visión -->
+  <section id="mision" class="section-light">
+    <div class="container">
+      <h2>Misión & Visión</h2>
+      <div class="about-columns">
+        <div class="column">
+          <h3>🚀 Nuestra Misión</h3>
+          <p>Conectar a empresas, instituciones y personas del Biobío con soluciones tecnológicas modernas, accesibles y efectivas.</p>
+        </div>
+        <div class="column">
+          <h3>🌱 Nuestra Visión</h3>
+          <p>Ser referentes regionales en desarrollo tecnológico, inspirando un ecosistema digital sostenible, colaborativo y comprometido con la comunidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo fundador -->
+  <section id="equipo" class="section-dark">
+    <div class="container">
+      <h2>Conoce a nuestro equipo</h2>
+      <div class="about-columns">
+        <div class="service-card">
+          <h3>Germán Mardones</h3>
+          <p>Ingeniero Informático, docente y líder técnico. Representante legal y fundador de BioBio Code.</p>
+        </div>
+        <div class="service-card">
+          <h3>Socio Técnica & Diseño</h3>
+          <p>Especialista en diseño UI/UX y desarrollo web. Lidera la experiencia visual y comunicación de marca.</p>
+        </div>
+        <div class="service-card">
+          <h3>Socio Comercial</h3>
+          <p>Encargado de gestión comercial y alianzas estratégicas. Aporta visión de mercado y expansión.</p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Filosofía -->
+  <section id="filosofia" class="section-light">
+    <div class="container">
+      <h2>Nuestra Filosofía</h2>
+      <p>Creemos en la tecnología como un motor de cambio social y regional. Nuestro enfoque humano y transparente nos permite construir relaciones de largo plazo con nuestros clientes, donde el éxito de sus proyectos es también el nuestro.</p>
+    </div>
+  </section>
+
+  <!-- Compromiso con la región -->
+  <section id="region" class="section-dark">
+    <div class="container">
+      <h2>Compromiso con la Región</h2>
+      <p>Nuestra inspiración nace del Biobío. Nos comprometemos con el desarrollo de la región apoyando fundaciones dedicadas a la preservación del medio ambiente y la fauna local. Parte de nuestras utilidades será destinada a estas causas.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 BioBio Code SpA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("navToggle");
+    const navList = document.getElementById("navList");
+    toggle.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

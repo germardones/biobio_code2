@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | BioBio Code</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog_style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">BioBio <span>Code</span></div>
+      <nav class="site-nav">
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <ul id="navList">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Blog -->
+  <section class="hero hero-blog">
+    <div class="container">
+      <h2>Blog BioBio Code</h2>
+      <p>Conocimiento, experiencias y soluciones desde el Biobío hacia el mundo digital.</p>
+    </div>
+  </section>
+
+  <!-- Lista de artículos -->
+  <section class="section-light blog-list">
+    <div class="container">
+      <div class="blog-card">
+        <h3><a href="#">Por qué creamos este blog</a></h3>
+        <p>Descubre los motivos detrás de este espacio digital y cómo esperamos aportar a empresas y profesionales de la región.</p>
+        <span class="blog-meta">Publicado el 3 de abril de 2025</span>
+      </div>
+
+      <div class="blog-card">
+        <h3><a href="#">5 errores comunes al iniciar la digitalización de tu empresa</a></h3>
+        <p>Una guía rápida para evitar los tropiezos más frecuentes cuando das los primeros pasos hacia la transformación digital.</p>
+        <span class="blog-meta">Publicado el 28 de marzo de 2025</span>
+      </div>
+
+      <div class="blog-card">
+        <h3><a href="/blog/blog-tecnologia-con-proposito.html">Tecnología con propósito: apoyar a la región también desde el código</a></h3>
+        <p>La tecnología no solo transforma empresas, también puede transformar comunidades. En este artículo exploramos cómo el desarrollo de software desde una mirada consciente puede tener un impacto positivo y real en el entorno local, apoyando causas medioambientales, sociales y comunitarias en la región del Biobío.</p>
+        <span class="blog-meta">Publicado el 20 de marzo de 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 BioBio Code SpA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("navToggle");
+    const navList = document.getElementById("navList");
+    toggle.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

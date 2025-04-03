@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BioBio Code - Soluciones tecnológicas desde el Biobío para el Biobío. Desarrollo web, automatización, seguridad y soporte profesional.">
+  <meta name="author" content="BioBio Code">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="BioBio Code | Soluciones Tecnológicas del Biobío">
+  <meta property="og:description" content="Soluciones digitales a medida, desarrollo web, automatización y soporte para empresas del Biobío.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://biobiocode.cl">
+  <meta property="og:image" content="https://biobiocode.cl/assets/images/preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BioBio Code | Soluciones Tecnológicas del Biobío">
+  <meta name="twitter:description" content="Soluciones digitales a medida, desarrollo web, automatización y soporte para empresas del Biobío.">
+  <meta name="twitter:image" content="https://biobiocode.cl/assets/images/preview.jpg">
+  <title>BioBio Code | Soluciones Tecnológicas del Biobío</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.site-nav ul');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">BioBio <span>Code</span></h1>
+      <nav class="site-nav">
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div>
+        <h2>Soluciones tecnológicas hechas en el Biobío</h2>
+        <p>Desarrollo web, automatización, seguridad y soporte real para tu empresa.</p>
+        <a href="#contacto" class="cta-button">Agenda una reunión</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros Section -->
+  <section id="nosotros"  class="about section-light">
+    <div class="container">
+      <h2>Quiénes somos</h2>
+      <p>BioBio Code es una empresa nacida en la Región del Biobío con la misión de impulsar la transformación digital de empresas, instituciones y emprendimientos a través del desarrollo de software personalizado, automatización de procesos y soluciones tecnológicas seguras y eficientes.</p>
+
+      <div class="about-columns">
+        <div class="column">
+          <h3>🚀 Misión</h3>
+          <p>Conectar a las empresas del Biobío con soluciones tecnológicas modernas, accesibles y a medida.</p>
+        </div>
+        <div class="column">
+          <h3>🌱 Visión</h3>
+          <p>Ser referentes regionales en desarrollo tecnológico, contribuyendo a un ecosistema digital sostenible y colaborativo.</p>
+        </div>
+        <div class="column">
+          <h3>💡 Valores</h3>
+          <ul>
+            <li>Compromiso con la calidad</li>
+            <li>Transparencia y cercanía</li>
+            <li>Escucha activa y mejora continua</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Section -->
+  <section id="servicios" class="section-dark servicios">
+    <div class="container">
+      <h2 class="centered-title">Servicios y Soluciones</h2>
+      <p>Ofrecemos soluciones modulares adaptadas a tus necesidades y presupuesto. Puedes comenzar por algo básico y escalar sin perder lo avanzado.</p>
+      <form id="moduleForm">
+      <!-- Categoría: Desarrollo Web & Móvil -->
+      <div class="service-group">
+        <h3>Desarrollo Web & Móvil</h3>
+        <div class="service-table">
+          <label class="service-row">
+            <input type="checkbox" value="250000" data-label="Sitio Básico">
+            <span class="service-name">Sitio Básico</span>
+            <span class="service-desc">Landing page, diseño responsive, formulario de contacto</span>
+            <span class="service-price">$250.000 CLP</span>
+          </label>
+          <label class="service-row">
+            <input type="checkbox" value="450000" data-label="Sitio Profesional">
+            <span class="service-name">Sitio Profesional</span>
+            <span class="service-desc">Hasta 5 secciones, optimización SEO, integración con redes</span>
+            <span class="service-price">$450.000 CLP</span>
+          </label>
+          <label class="service-row">
+            <input type="checkbox" value="650000" data-label="Web + Ecommerce">
+            <span class="service-name">Web + Ecommerce</span>
+            <span class="service-desc">Catálogo, pasarela de pago, control de stock</span>
+            <span class="service-price">$650.000 CLP</span>
+          </label>
+          <label class="service-row">
+            <input type="checkbox" value="850000" data-label="App Móvil Básica">
+            <span class="service-name">App Móvil Básica (MVP)</span>
+            <span class="service-desc">Prototipo funcional, login, carga y consulta de datos</span>
+            <span class="service-price">$850.000 CLP</span>
+          </label>
+        </div>
+      </div>
+      <!-- Categoría: Automatización de Procesos -->
+        <div class="service-group">
+            <h3>Automatización de Procesos</h3>
+            <div class="service-table">
+            <label class="service-row">
+                <input type="checkbox" value="400000" data-label="Flujo simple automatizado">
+                <span class="service-name">Flujo simple automatizado</span>
+                <span class="service-desc">Digitalización de formulario, base de datos y dashboard</span>
+                <span class="service-price">$400.000 CLP</span>
+            </label>
+            <label class="service-row">
+                <input type="checkbox" value="550000" data-label="Integración con herramientas">
+                <span class="service-name">Integración con herramientas</span>
+                <span class="service-desc">Scripts + APIs conectadas (Google Sheets, WhatsApp, Email)</span>
+                <span class="service-price">$550.000 CLP</span>
+            </label>
+            <label class="service-row">
+                <input type="checkbox" value="800000" data-label="Sistema de gestión interno">
+                <span class="service-name">Sistema de gestión interno (CRM, tareas, stock)</span>
+                <span class="service-desc">MVP a medida, acceso por roles y panel de control</span>
+                <span class="service-price">$800.000 CLP</span>
+            </label>
+            </div>
+        </div>
+      <!-- Categoría: Integraciones Inteligentes -->
+<div class="service-group">
+    <h3>Integraciones Inteligentes</h3>
+    <div class="service-table">
+      <label class="service-row">
+        <input type="checkbox" value="150000" data-label="Transbank (Webpay o Flow)">
+        <span class="service-name">Transbank / Flow</span>
+        <span class="service-desc">Conexión e implementación básica de pagos en tu sitio</span>
+        <span class="service-price">$150.000 CLP</span>
+      </label>
+      <label class="service-row">
+        <input type="checkbox" value="200000" data-label="WhatsApp API Business">
+        <span class="service-name">WhatsApp API Business</span>
+        <span class="service-desc">Automatización de respuestas + enlaces inteligentes</span>
+        <span class="service-price">$200.000 CLP</span>
+      </label>
+      <label class="service-row">
+        <input type="checkbox" value="300000" data-label="Conexiones personalizadas">
+        <span class="service-name">Conexiones personalizadas</span>
+        <span class="service-desc">Integración con ERP, Odoo, Google Workspace, etc.</span>
+        <span class="service-price">$300.000 CLP</span>
+      </label>
+    </div>
+  </div>
+<!-- Categoría: Consultoría Tecnológica -->
+<div class="service-group">
+    <h3>Consultoría Tecnológica</h3>
+    <div class="service-table">
+      <label class="service-row">
+        <input type="checkbox" value="120000" data-label="Revisión técnica de software">
+        <span class="service-name">Revisión técnica de software</span>
+        <span class="service-desc">Informe con diagnóstico, análisis y propuesta de mejora</span>
+        <span class="service-price">$120.000 CLP</span>
+      </label>
+      <label class="service-row">
+        <input type="checkbox" value="150000" data-label="Asesoría digital para pymes">
+        <span class="service-name">Asesoría digital para pymes</span>
+        <span class="service-desc">2 sesiones + plan estratégico personalizado</span>
+        <span class="service-price">$150.000 CLP</span>
+      </label>
+      <label class="service-row">
+        <input type="checkbox" value="250000" data-label="Mentoría mensual">
+        <span class="service-name">Mentoría mensual</span>
+        <span class="service-desc">4 sesiones mensuales + seguimiento de indicadores</span>
+        <span class="service-price">$250.000 CLP</span>
+      </label>
+    </div>
+  </div>
+      </form>
+  
+      <!-- Más categorías pueden ir aquí... -->
+  
+      <!-- Resultado dinámico -->
+      <div class="calculator-result">
+        <div class="summary-card">
+          <h3>Resumen de servicios seleccionados</h3>
+          <div id="selected-modules"></div>
+          <p id="total-message" class="total-msg">Selecciona uno o más servicios para calcular el total estimado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- Contacto -->
+<!-- Contacto -->
+<section id="contacto" class="contact section-light">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes un proyecto en mente o necesitas una solución digital? Hablemos.</p>
+  
+      <div class="contact-grid">
+        <!-- Formulario -->
+        <div class="form-wrapper">
+          <form class="contact-form"  action="#" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+  
+        <!-- Información -->
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          <p>📧 contacto@biobiocode.cl</p>
+          <p>📱 +56 9 1234 5678</p>
+          <p>🌍 Región del Biobío, Chile</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Llamado a la acción -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("moduleForm");
+  const selectedModules = document.getElementById("selected-modules");
+  const totalMessage = document.getElementById("total-message");
+  const resultContainer = document.querySelector(".calculator-result");
+
+  form.addEventListener("change", () => {
+    const selected = form.querySelectorAll("input[type='checkbox']:checked");
+
+    if (selected.length === 0) {
+      resultContainer.style.display = "none"; // Oculta el resumen
+      selectedModules.innerHTML = "";
+      totalMessage.textContent = "";
+      totalMessage.classList.remove("highlight");
+      return;
+    }
+
+    // Mostrar resumen solo si hay selección
+    resultContainer.style.display = "block";
+
+    const list = Array.from(selected).map(input => {
+      const label = input.dataset.label || input.nextElementSibling?.textContent || "Servicio";
+      return `<li>${label}</li>`;
+    }).join("");
+
+    selectedModules.innerHTML = `<ul>${list}</ul>`;
+
+    let total = 0;
+    selected.forEach(item => {
+      const val = parseInt(item.value);
+      if (!isNaN(val)) total += val;
+    });
+
+    const message = encodeURIComponent(
+  `Hola, estoy interesado en contratar servicios por un total estimado de ${total.toLocaleString("es-CL")} CLP. ¿Podemos agendar una reunión para conversar más detalles?`
+);
+
+totalMessage.innerHTML = `
+  <a href="https://wa.me/56931047688?text=${message}" target="_blank" class="cta-total">
+    Total estimado: ${total.toLocaleString("es-CL")} CLP → Escríbenos por WhatsApp
+  </a>
+`;
+
+
+    totalMessage.classList.add("highlight");
+
+    setTimeout(() => totalMessage.classList.remove("highlight"), 600);
+  });
+});
+
+  </script>
+  
+  <!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>BioBio <span>Code</span></h3>
+        <p>Soluciones tecnológicas desde el Biobío para el Biobío.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>📧 contacto@biobiocode.cl</p>
+        <p>📱 +56 9 1234 5678</p>
+        <p>🌍 Región del Biobío, Chile</p>
+      </div>
+    </div>
+    <div class="container copy">
+      <p>&copy; 2025 BioBio Code SpA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

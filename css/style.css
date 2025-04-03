@@ -1,0 +1,1011 @@
+/* === VARIABLES Y RESET === */
+:root {
+    --primary: #0a0f2c;
+    --accent: #00d4a5;
+    --light: #f9f9f9;
+    --dark: #141414;
+  }
+  
+  /* === TIPOGRAFÍA Y ESTRUCTURA BASE === */
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+  }
+  
+  section {
+    width: 100%;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .section-light {
+    background-color: var(--light);
+    color: var(--dark);
+  }
+  
+  .section-dark {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .section-dark h2,
+  .section-dark h3,
+  .section-dark p,
+  .section-dark ul,
+  .section-dark .price {
+    color: white;
+  }
+  
+  .section-dark .service-card {
+    background-color: #1b1f3a;
+    border-color: #2c2f4a;
+    color: white;
+  }
+  
+  .section-dark .service-card h3,
+  .section-dark .service-card .price {
+    color: var(--accent);
+  }
+  
+  /* Ajuste de tarjetas del equipo */
+  .section-dark .about-columns .column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: white;
+    color: var(--primary);
+    border-radius: 10px;
+    max-width: 300px;
+    min-height: 180px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Suaviza transición entre secciones */
+  .section-light,
+  .section-dark {
+    padding: 5rem 0;
+  }
+  
+  .section-light p,
+  .section-dark p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+  }
+  
+  /* Centrado del contenido en Filosofía y Compromiso */
+  #filosofia .container,
+  #region .container {
+    text-align: center;
+  }
+  
+  /* === HEADER Y NAVEGACIÓN === */
+  .site-header,
+  .site-footer,
+  .hero h2,
+  .hero p,
+  .logo {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  
+  .site-header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .site-header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .site-header .logo span {
+    color: var(--accent);
+  }
+  
+  .site-nav {
+    position: relative;
+  }
+  
+  .nav-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .site-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .site-nav a:hover {
+    color: var(--accent);
+  }
+  
+  .site-nav ul.active {
+    display: flex;
+  }
+  
+  
+  
+  /* === HERO === */
+  
+  .hero {
+    background: linear-gradient(rgba(10, 15, 44, 0.9), rgba(10, 15, 44, 0.9)), url('/img/fondo.avif') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* === BOTÓN CTA === */
+  .cta-button {
+    background: var(--accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #00b38e;
+  }
+  
+  .cta-final .cta-button {
+    background: var(--accent);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-final .cta-button:hover {
+    background: #00b38e;
+  }
+  
+  /* === NOSOTROS === */
+  .about {
+    background-color: var(--light);
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+  }
+  
+  .about-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .about-columns .column {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .about-columns .column h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  .about-columns .column ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-columns .column ul li::before {
+    content: "✔️ ";
+    margin-right: 0.5rem;
+    color: var(--accent);
+  }
+  
+  /* === SERVICIOS (GRID) === */
+  .services {
+    background-color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  .services p {
+    margin-bottom: 2.5rem;
+    color: var(--dark);
+  }
+  
+  .service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background-color: var(--light);
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 300px;
+    flex: 1 1 260px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  .service-card .price {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  /* === CALCULADORA BÁSICA === */
+  .checkbox-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  /* Calculadora */
+  .calculator {
+    background: #f1f1f1;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .calculator h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .calculator-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+  }
+  
+  .checkbox-container {
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+    font-weight: 500;
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    background: #fff;
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background 0.2s ease;
+  }
+  
+  .checkbox-container:hover {
+    background: #f0f0f0;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    left: 0;
+    top: 1.1rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #ddd;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .checkbox-container input:checked~.checkmark {
+    background-color: var(--accent);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked~.checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .calculator-result {
+    display: none;
+    margin-top: 3rem;
+  }
+  
+  
+  .calculator-note {
+    margin-top: -1rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .calculator-form fieldset {
+    border: none;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  
+  .calculator-form legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .calculator-form .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1rem 1rem 2.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+  }
+  
+  .calculator-form .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .calculator-form input:checked~.checkmark {
+    background-color: var(--accent);
+  }
+  
+  .calculator-form .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .calculator-form input:checked~.checkmark:after {
+    display: block;
+  }
+  
+  .calculator-form .checkmark:after {
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Resultado/resumen */
+  .calculator-result {
+    margin-top: 3rem;
+  }
+  
+  /* === CALCULADORA AVANZADA (AGRUPADA) === */
+  /* Agrupación de servicios por categoría */
+  .service-group {
+    margin-top: 4rem;
+  }
+  
+  .service-group h3 {
+    font-size: 1.4rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent);
+    padding-left: 0.8rem;
+  }
+  
+  /* Tabla visual de servicios */
+  .service-table {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Cada fila del servicio */
+  .service-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-row:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Columnas de nombre, descripción y precio */
+  .service-name {
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  .service-desc {
+    font-size: 0.95rem;
+    color: #444;
+    padding: 0 1rem;
+  }
+  
+  .service-price {
+    text-align: right;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  .service-desc {
+    padding: 0;
+  }
+  
+  .service-price {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  
+  /* Estructura general */
+  .service-group {
+    margin-top: 3rem;
+  }
+  
+  .service-group h3 {
+    font-size: 1.6rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .service-table {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Tarjeta de servicio */
+  .service-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: var(--primary);
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .service-row:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Ocultar checkbox */
+  .service-row input[type="checkbox"] {
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Resaltar si está seleccionado */
+  .service-row input[type="checkbox"]:checked+.service-name,
+  .service-row input[type="checkbox"]:checked~.service-desc,
+  .service-row input[type="checkbox"]:checked~.service-price {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  
+  /* Elementos dentro de la tarjeta */
+  .service-name {
+    font-weight: bold;
+    font-size: 1rem;
+    flex: 1 1 25%;
+  }
+  
+  .service-desc {
+    flex: 1 1 55%;
+    font-size: 0.95rem;
+    color: #555;
+    padding: 0 1rem;
+  }
+  
+  .service-price {
+    flex: 1 1 20%;
+    text-align: right;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  .service-name,
+  .service-desc,
+  .service-price {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+  
+  .service-price {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+  
+  /* === RESUMEN CALCULADORA === */
+  #selected-modules ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .total-msg {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  .total-msg.highlight {
+    animation: flash 0.5s ease-in-out;
+  }
+  
+  
+  .summary-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .summary-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  #selected-modules ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .total-msg {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  .summary-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .summary-card ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  .total-msg {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  .total-msg.highlight {
+    animation: flash 0.6s ease-in-out;
+  }
+  
+  .summary-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .summary-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .summary-card li {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .total-msg {
+    font-size: 1.4rem;
+    color: var(--accent);
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .total-msg.highlight {
+    animation: flash 0.6s ease-in-out;
+  }
+  
+  
+  .summary-card {
+    background: white;
+    color: var(--dark);
+    /* ⚠️ Esto fuerza el color del texto a oscuro */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .summary-card h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .summary-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .summary-card li {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .total-msg {
+    font-size: 1.4rem;
+    color: var(--accent);
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  /* === CONTACTO === */
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .form-wrapper,
+  .contact-info {
+    flex: 1 1 400px;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    border: none;
+    background-color: var(--accent);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #00b38e;
+  }
+  
+  .contact-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+  }
+  
+  
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  /* === FOOTER === */
+  .site-footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  
+  .site-footer {
+    background: var(--primary);
+    color: white;
+    padding: 3rem 0 1rem;
+    font-size: 0.9rem;
+    scroll-snap-align: end;
+  }
+  
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer-brand h3 {
+    font-size: 1.5rem;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-brand span {
+    color: var(--accent);
+  }
+  
+  .footer-links ul,
+  .footer-contact {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+  
+  /* === LLAMADO A LA ACCIÓN FINAL === */
+  
+  .cta-final {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: var(--light);
+    color: var(--primary);
+  }
+  
+  .cta-final h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-final p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--dark);
+  }
+  
+  /* === UTILIDADES GLOBALES === */
+  #filosofia h2,
+  #region h2 {
+    margin-bottom: 1.5rem;
+  }
+  .centered-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .calculator-result .total-msg {
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #00b38e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  /* === OTROS BLOQUES NO CLASIFICADOS === */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* ============================= */
+/* RESPONSIVE - MENOR A 768PX   */
+/* ============================= */
+@media screen and (max-width: 768px) {
+    .site-nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: var(--primary);
+      position: absolute;
+      right: 0;
+      top: 60px;
+      padding: 1rem;
+      width: 200px;
+    }
+  
+    .form-wrapper,
+    .contact-info {
+      max-width: 100%;
+    }
+  
+    .copy {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+  
+    .footer-grid {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .service-row {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 0.5rem;
+    }
+    .nav-toggle {
+        display: block;
+      }
+      .contact-grid {
+        flex-direction: column;
+        align-items: center;
+      } 
+  }
+  .cta-total {
+    display: inline-block;
+    background-color: #00b38e;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-total:hover {
+    background-color: #00b38e;
+  }
+  
+  
+ 
+  
