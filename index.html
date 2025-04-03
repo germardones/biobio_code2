@@ -1,27 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BioBio Code - Soluciones tecnológicas desde el Biobío para el Biobío. Desarrollo web, automatización, seguridad y soporte profesional.">
-  <meta name="author" content="BioBio Code">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="BioBio Code | Soluciones Tecnológicas del Biobío">
-  <meta property="og:description" content="Soluciones digitales a medida, desarrollo web, automatización y soporte para empresas del Biobío.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://biobiocode.cl">
-  <meta property="og:image" content="https://biobiocode.cl/assets/images/preview.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BioBio Code | Soluciones Tecnológicas del Biobío">
-  <meta name="twitter:description" content="Soluciones digitales a medida, desarrollo web, automatización y soporte para empresas del Biobío.">
-  <meta name="twitter:image" content="https://biobiocode.cl/assets/images/preview.jpg">
-  <title>BioBio Code | Soluciones Tecnológicas del Biobío</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BioBio Code - Soluciones tecnológicas desde el Biobío para el Biobío. Desarrollo web, automatización, seguridad y soporte profesional.">
+    <meta name="author" content="BioBio Code">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="BioBio Code | Soluciones Tecnológicas del Biobío">
+    <meta property="og:description" content="Soluciones digitales a medida, desarrollo web, automatización y soporte para empresas del Biobío.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biobiocode.cl">
+    <meta property="og:image" content="https://biobiocode.cl/img/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BioBio Code | Soluciones Tecnológicas del Biobío">
+    <meta name="twitter:description" content="Soluciones digitales a medida, desarrollo web, automatización y soporte para empresas del Biobío.">
+    <meta name="twitter:image" content="https://biobiocode.cl/img/preview.jpg">
+    <meta name="theme-color" content="#00d4a5">
+    <link rel="canonical" href="https://biobiocode.cl/">
+    <meta name="keywords" content="desarrollo web, soluciones tecnológicas, automatización, seguridad informática, Bio Bío, Concepcion, soporte técnico, BioBio Code">
   
+    <!-- Preconnects y Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  
+    <!-- Ícono -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  
+    <!-- CSS no bloqueante -->
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.onload=null;this.media='all';">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  
+    <!-- Título -->
+    <title>BioBio Code | Soluciones Tecnológicas del Biobío</title>
+    
+    <!-- Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "BioBio Code",
+        "url": "https://biobiocode.cl",
+        "logo": "https://biobiocode.cl/img/logo.png",
+        "description": "Soluciones modulares de desarrollo web, automatización, integración y consultoría tecnológica desde el Biobío.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Región del Biobío",
+          "addressCountry": "CL"
+        },
+        "areaServed": "CL",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios y Soluciones",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Desarrollo Web & Móvil",
+              "itemListElement": [
+                { "@type": "Service", "name": "Sitio Básico", "description": "Landing page, diseño responsive, formulario de contacto." },
+                { "@type": "Service", "name": "Sitio Profesional", "description": "Hasta 5 secciones, optimización SEO, integración con redes." },
+                { "@type": "Service", "name": "Web + Ecommerce", "description": "Catálogo, pasarela de pago, control de stock." },
+                { "@type": "Service", "name": "App Móvil Básica (MVP)", "description": "Prototipo funcional, login, carga y consulta de datos." }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Automatización de Procesos",
+              "itemListElement": [
+                { "@type": "Service", "name": "Flujo simple automatizado", "description": "Digitalización de formulario, base de datos y dashboard." },
+                { "@type": "Service", "name": "Integración con herramientas", "description": "Scripts + APIs conectadas (Google Sheets, WhatsApp, Email)." },
+                { "@type": "Service", "name": "Sistema de gestión interno", "description": "MVP a medida, acceso por roles y panel de control." }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Integraciones Inteligentes",
+              "itemListElement": [
+                { "@type": "Service", "name": "Transbank / Flow", "description": "Conexión e implementación básica de pagos en tu sitio." },
+                { "@type": "Service", "name": "WhatsApp API Business", "description": "Automatización de respuestas + enlaces inteligentes." },
+                { "@type": "Service", "name": "Conexiones personalizadas", "description": "Integración con ERP, Odoo, Google Workspace, etc." }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Consultoría Tecnológica",
+              "itemListElement": [
+                { "@type": "Service", "name": "Revisión técnica de software", "description": "Informe con diagnóstico, análisis y propuesta de mejora." },
+                { "@type": "Service", "name": "Asesoría digital para pymes", "description": "2 sesiones + plan estratégico personalizado." },
+                { "@type": "Service", "name": "Mentoría mensual", "description": "4 sesiones mensuales + seguimiento de indicadores." }
+              ]
+            }
+          ]
+        }
+      }
+      </script>
+
   <script>
     function toggleMenu() {
       const navMenu = document.querySelector('.site-nav ul');
@@ -211,7 +284,7 @@
 
   
   <!-- Contacto -->
-<!-- Contacto -->
+
 <section id="contacto" class="contact section-light">
     <div class="container">
       <h2>Contáctanos</h2>
@@ -238,6 +311,7 @@
       </div>
     </div>
   </section>
+  
   <!-- Llamado a la acción -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
